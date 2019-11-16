@@ -1,130 +1,87 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+body{
+  background:lightseagreen;
+  color: whitesmoke;
+  font-style: initial;
 }
-
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
-
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
+.heading{
   color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+    border-top-left-radius: 15px;
+  width: 100%;
+  background:lightgrey;
+  text-align: center;
 }
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+h2{
+  font-weight: bolder;
+  text-align: center;
 }
-
-
-
-
-
-/*body{
-  margin:0;
-  min-width: 300px;
+h3{
+  font-size: 1.25rem;
+  text-align: center;
 }
-ul{
-  margin:0;
-  padding: 0%;
-
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: whitesmoke;
+  }
+  
+  td, th {
+    font-size: 1.25rem;
+    color: lightcyan;
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    text-align: center;
+  }
+  tr:nth-child(even) {
+    background: gray;
+  }
+  tr:nth-child(odd) {
+    background: lightgray;
+  }
+  button {
+    width: 100%;
+    height: 100%;
+  }
+  .addBTN {
+    margin-top: 10px;
+    background:lightcyan;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-color: white;
+    width: 100%;
+    font-weight: bold;
+    color: gray;
+  }
+  input {
+    width: 100%;
+  }
+#timer {
+  text-align: right;
+  font-size: 1.50rem;
+  font-weight: bold;
 }
-ul li{
-  position: relative;
-  background-color: lightgray;
-  list-style-type: none;
+i {
+  text-align: center;
+}
+#save{
+  text-align: center;
+}
+#newTime{
+  text-align: center;
+  font-size: 16px;
+}
+option{
+  font-size: 16px;
+}
+cursor{
   cursor: pointer;
-  transition: 0.5s;
-
-  /* making list unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
- /* user-select: none;
-
-
-ul li:nth-child(even){
-background-color: gray;
-
 }
-
-ul li:hover{
-  background-color: chartreuse;
-}
-
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border: black solid 2px 5px 5px 2px;
-  top: 10px;
-  left: 15px;
-  transform: rotate (60deg);
-  height:15px;
-  width:10px;
-
-
-.close{
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding:10px 15px;
-}
-
-.close:hover{
-  background-color: dimgray;
-
-}*/

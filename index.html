@@ -1,47 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!--****Didnt know this activity included HTML-->
-      <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dayplanner.css" />
-    <title>Work Day Scheduler</title>
-  </head>
+  <title>Document</title>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="dayplanner.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src=assets/moment.js></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="heading">
+        <h2>Day Planner</h2>
+        <h3 id="Date"></h3>
+      </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <div class="row">
+      <button class="addBTN">ADD EVENT</button>
+    </div>
   
+  <div class="table2">
+    <div class="container">
+      <div class="row">
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Save</th>
+          </tr>
+          <tr>
+            <td><select id="newTime">
+                <option value="9AM">9AM</option>
+                <option value="10AM">10AM</option>
+                <option value="11AM">11AM</option>
+                <option value="12PM">12PM</option>
+                <option value="1PM">1PM</option>
+                <option value="2PM">2PM</option>
+                <option value="3PM">3PM</option>
+                <option value="4PM">4PM</option>
+                <option value="5PM">5PM</option>
+              </select></td>
+            <td><input type="text" placeholder="Go to Class" id="newEvent"></input></td>
+            <td id="save"><i id="12PM" class="material-icons md-48">send</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <table class="table">
+    <tr>
+      <th>Time</th>
+      <th class="col-8">Event</th>
+      <th>Save</th>
+    </tr>
+    <tr>
+      <td id="timer">9AM</td>
+      <td>
+        <ul>
+          <li id="9">
+          </li>
+        </ul>
+      </td>
+      <td id="9AM"><i class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">10AM</td>
+      <td>
+        <ul>
+          <li id="10">
+          </li>
+        </ul>
+      </td>
+      <td><i id="10AM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">11AM</td>
+      <td>
+        <ul>
+          <li id="11">
+          </li>
+        </ul>
+      </td>
+      <td><i id="11AM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">12PM</td>
+      <td>
+        <ul>
+          <li id="12">
+          </li>
+        </ul>
+      </td>
+      <td><i id="12PM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">1PM</td>
+      <td>
+        <ul>
+          <li id="1">
+          </li>
+        </ul>
+      </td>
+      <td><i id="1PM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">2PM</td>
+      <td>
+        <ul>
+          <li id="2">
+          </li>
+        </ul>
+      </td>
+      <td><i id="2PM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">3PM</td>
+      <td>
+        <ul>
+          <li id="3">
+          </li>
+        </ul>
+      </td>
+      <td><i id="3PM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">4PM</td>
+      <td>
+        <ul>
+          <li id="4">
+          </li>
+        </ul>
+      </td>
+      <td><i id="4PM" class="material-icons md-48">delete</i></td>
+    </tr>
+    <tr>
+      <td id="timer">5PM</td>
+      <td>
+        <ul>
+          <li id="5">
+          </li>
+        </ul>
+      </td>
+      <td><a id="5PM" class="material-icons md-48">delete</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  </div>
+  <script src="dayplanner.js"></script>
+</body>
+
+</html>
+
 
 
   <!--CSS
